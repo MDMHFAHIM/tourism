@@ -23,15 +23,18 @@
 								</div><!-- /.navbar-header-->
 								<div class="collapse navbar-collapse">		  
 									<ul class="nav navbar-nav navbar-right">
-										<li class="smooth-menu"><a href="#home">home</a></li>
-										<li class="smooth-menu"><a href="#gallery">Destination</a></li>
-										<li class="smooth-menu"><a href="/package">Packages </a></li>
-										<li class="smooth-menu"><a href="/offer">Special Offers</a></li>
-										<li class="smooth-menu"><a href="#blog">blog</a></li>
-										<li class="smooth-menu"><a href="#subs">subscription</a></li>
+										<li class="smooth-menu"><a href="/home">Home</a></li>
+										<li class="smooth-menu"><a href="/destination">Destination</a></li>
+										<li class="smooth-menu"><a href="/package">Package </a></li>
+										<li class="smooth-menu"><a href="/transport">Transport </a></li>
+										<li class="smooth-menu"><a href="/blog">Blog</a></li>
+										<li class="smooth-menu"><a href="/offer">Offer</a></li>
+										
 										<li>
-											<button class="book-btn">book now
-											</button>
+											<!-- Button: Join Now -->
+                                            <button v-if="uid" className='btn-primary' @click="logout">  Logout</button> 
+                                            <router-link v-if="uid" :to="'/customer/'" class="nav-item nav-link"></router-link>
+                                            <a v-if="!uid" href="/login" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> <i className="fa fa-arrow-right ms-3"></i>Join Now</a>
 										</li><!--/.project-btn--> 
 									</ul>
 								</div><!-- /.navbar-collapse -->
@@ -50,8 +53,20 @@
 <script>
 export default {
   name: 'Header',
+  data() {
+    return {
+      uid:sessionStorage.getItem('uid')
+    };
+  },
   props: {
     msg: String
+  },
+  methods: {
+    logout() {
+      this.uid="";
+      sessionStorage.setItem('uid', '');
+      window.location.reload();
+    }
   }
 }
 </script>
