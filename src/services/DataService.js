@@ -4,9 +4,12 @@ class DataService {
     login(data) {
         return http.post("/customer/login", data);
     }
-    // orders(uid) {
-    //   return http.get(`/orders/${uid}`);
-    // }
+    package() {
+        return http.get(`/package`);
+    }
+    transport() {
+        return http.get(`/transport`);
+    }
     // ordertrack(uid) {
     //   return http.get(`/ordertrack/${uid}`);
     // }

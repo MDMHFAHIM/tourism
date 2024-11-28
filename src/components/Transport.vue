@@ -15,257 +15,70 @@
 				<div class="packages-content">
 					<div class="row">
 
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="assets/images/transport/t1.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3> E-Bike <span class="pull-right">$29</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i> Full Day / Week
-											</span>
-											<i class="fa fa-angle-right"></i>  5 star service
+						<div v-for="p in alldata" :key="p.id" class="col-md-4 col-sm-6">
+						<div class="single-package-item">
+							<img :src='"http://127.0.0.1:8000/transport/"+p.image' alt="package-place">
+							<div class="single-package-item-txt">
+								<h3>{{p.vehicle}} <span class="pull-right">{{p.price}}</span></h3>
+								<div class="packages-para">
+									<p>
+										<span><i class="fa fa-angle-right"></i> Full Day / Week</span>
+										
+										<i class="fa fa-angle-right"></i>  {{p.location}} 
+									</p>
+									<p>
+										<span>
+											<i class="fa fa-angle-right"></i>  transportation
+										</span>
+										<i class="fa fa-angle-right"></i>  food facilities
 										</p>
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i>  AC / Non AC
-											</span>
-											<i class="fa fa-angle-right"></i>  food facilities
-											</p>
 
 
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>2544 review</span>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn">
-										<button  class="about-view packages-btn">
-											book now
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
+								</div><!--/.packages-para-->
+								
+								<div class="about-btn">
+									<button  class="about-view packages-btn">
+										book now
+									</button>
+								</div><!--/.about-btn-->
+							</div><!--/.single-package-item-txt-->
+						</div><!--/.single-package-item-->
 
-						</div><!--/.col-->
+					</div><!--/.col-->
 
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="assets/images/transport/t2.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>Cycle <span class="pull-right">$19</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i> Full Day / Week 
-											</span>
-											<i class="fa fa-angle-right"></i>  4 Star Service
-										</p>
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i>  Gear / Non Gear
-											</span>
-											<i class="fa fa-angle-right"></i>  Food Facilities
-											</p>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>2244 review</span>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn">
-										<button  class="about-view packages-btn">
-											book now
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
+				</div><!--/.row-->
+			</div><!--/.packages-content-->
+		</div><!--/.container-->
 
-						</div><!--/.col-->
-						
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="assets/images/transport/t3.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>Car <span class="pull-right">$49</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i> Full Day / Week 
-											</span>
-											<i class="fa fa-angle-right"></i>  5 star service
-										</p>
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i> AC / Non AC
-											</span>
-											<i class="fa fa-angle-right"></i>  Food Facilities
-											</p>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>2944 review</span>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn">
-										<button  class="about-view packages-btn">
-											book now
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-
-						</div><!--/.col-->
-						
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="assets/images/transport/t4.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3> Bus <span class="pull-right">$39</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i> Full Day / Week 
-											</span>
-											<i class="fa fa-angle-right"></i>  4 Star Service
-										</p>
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i>  AC / Non AC
-											</span>
-											<i class="fa fa-angle-right"></i>  Food Facilities
-											</p>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>3187 review</span>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn">
-										<button  class="about-view packages-btn">
-											book now
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-
-						</div><!--/.col-->
-						
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="assets/images/transport/t5.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>Ferry <span class="pull-right">$29</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i> One Way / Return
-											</span>
-											<i class="fa fa-angle-right"></i>  5 star service
-										</p>
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i>  AC / Non AC
-											</span>
-											<i class="fa fa-angle-right"></i>  Food Facilities
-											</p>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>1874 review</span>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn">
-										<button  class="about-view packages-btn">
-											book now
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-
-						</div><!--/.col-->
-						
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="assets/images/transport/t6.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3> Shuttle <span class="pull-right">$49</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i> One Way / Return
-											</span>
-											<i class="fa fa-angle-right"></i>  4 Star Service
-										</p>
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i>  AC / Non AC
-											</span>
-											<i class="fa fa-angle-right"></i>  Food Facilities
-											</p>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>3065 review</span>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn">
-										<button  class="about-view packages-btn">
-											book now
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-
-						</div><!--/.col-->
-
-					</div><!--/.row-->
-				</div><!--/.packages-content-->
-			</div><!--/.container-->
-
-		</section><!--/.packages-->
-		<!-- transport end-->
-
-		
+	</section><!--/.packages-->
+	<!--packages end-->
 </template>
-
 <script>
+import DataService from "../services/DataService";
+//import router from '@/router';
 export default {
   name: 'Transport',
-  props: {
-    msg: String
+  data() {
+    return {
+      alldata:[]
+    };
+  },
+  methods: {
+    transport() {
+       DataService.transport()
+        .then(response => {
+          console.log(response.data)
+          if(response.data)
+            this.alldata= response.data.data;
+          else
+            alert(response.data.error)
+        })
+        .catch(e => {
+          console.log(e);
+      });
+    }
+  }, mounted() {
+    this.transport();
   }
 }
 </script>

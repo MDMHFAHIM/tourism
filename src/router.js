@@ -30,6 +30,12 @@ const routes = [
     },
 
     {
+        path: "/package_booking",
+        alias: "/package_booking",
+        name: "package_booking",
+        component: () => import("./components/Package_Booking")
+    },
+    {
         path: "/transport",
         alias: "/transport",
         name: "transport",
@@ -37,10 +43,24 @@ const routes = [
     },
 
     {
+        path: "/transport_booking",
+        alias: "/transport_booking",
+        name: "transport_booking",
+        component: () => import("./components/Transport_Booking")
+    },
+
+    {
         path: "/blog",
         alias: "/blog",
         name: "blog",
         component: () => import("./components/Blog")
+    },
+
+    {
+        path: "/mail",
+        alias: "/mail",
+        name: "mail",
+        component: () => import("./components/Mail")
     },
 
     {
