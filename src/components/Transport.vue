@@ -37,9 +37,9 @@
 								</div><!--/.packages-para-->
 								
 								<div class="about-btn">
-									<button  class="about-view packages-btn">
+									<a :href="'/Transport_Booking/'+p.id+'/'+p.price" class="about-view packages-btn">
 										book now
-									</button>
+									</a>
 								</div><!--/.about-btn-->
 							</div><!--/.single-package-item-txt-->
 						</div><!--/.single-package-item-->

@@ -30,7 +30,7 @@ const routes = [
     },
 
     {
-        path: "/package_booking",
+        path: "/package_booking/:id/:price",
         alias: "/package_booking",
         name: "package_booking",
         component: () => import("./components/Package_Booking")
@@ -43,7 +43,7 @@ const routes = [
     },
 
     {
-        path: "/transport_booking",
+        path: "/transport_booking/:id/:price",
         alias: "/transport_booking",
         name: "transport_booking",
         component: () => import("./components/Transport_Booking")

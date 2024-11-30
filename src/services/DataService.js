@@ -10,6 +10,12 @@ class DataService {
     transport() {
         return http.get(`/transport`);
     }
+    bookPackage(data) {
+        return http.post(`/package_booking/create`, data);
+    }
+    bookTransport(data) {
+        return http.post(`/transport_booking/create`, data);
+    }
     // ordertrack(uid) {
     //   return http.get(`/ordertrack/${uid}`);
     // }

@@ -1,31 +1,49 @@
-<template>
-    <div className="text-center mb-5">
-      <img src="" alt="" height="48" className='mb-4' />
-      <h3>Sign In</h3>
-      <p>Please sign in to continue to TourNest.</p>
-    </div>
-    <form onSubmit={handleSubmit}>
-        <div className="form-group position-relative has-icon-left">
-            <label htmlFor="email" class="form-label text-primary"> Email </label>
-      <input type="text" class="form-control" id="email" name="email"
-        v-model="formData.email" placeholder="Enter Your Email"/>
-        </div>
-        <div className="form-group position-relative has-icon-left">
-            <div className="clearfix">
-                <label htmlFor="password" class="form-label text-primary">Password </label>
-            <input type="password" class="form-control" id="password" name="password"
-            v-model="formData.password" placeholder="Enter a password"/>
-
+<template><!--galley start-->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="gallery-details">
+        <div class="gallary-header text-center">
+          <h2>
+            top destination
+          </h2>
+          <p>
+            Duis aute irure dolor in  velit esse cillum dolore eu fugiat nulla.  
+          </p>
+        </div><!--/.gallery-header-->
+        <div class="gallery-box">
+          <div class="gallery-content"><div class="filtr-container"></div>
+            <div className="text-center mb-5">
+              <img src="" alt="" height="48" className='mb-4' />
+              <h3>Sign In</h3>
+              <p>Please sign in to continue to TourNest.</p>
             </div>
+            <form onSubmit={handleSubmit}>
+                <div className="form-group position-relative has-icon-left">
+                    <label htmlFor="email" class="form-label text-primary"> Email </label>
+              <input type="text" class="form-control" id="email" name="email"
+                v-model="formData.email" placeholder="Enter Your Email"/>
+                </div>
+                <div className="form-group position-relative has-icon-left">
+                    <div className="clearfix">
+                        <label htmlFor="password" class="form-label text-primary">Password </label>
+                    <input type="password" class="form-control" id="password" name="password"
+                    v-model="formData.password" placeholder="Enter a password"/>
 
-            <br/>
-                    
-        <div className="clearfix">
-            <button type="button" @click="login" class="btn btn-primary w-100"> Submit</button>
-        </div>
-      
-      </div>
-    </form>
+                    </div>
+
+                    <br/>
+                            
+                <div className="clearfix">
+                    <button type="button" @click="login" class="btn btn-primary w-100"> Submit</button>
+                </div>
+              
+              </div>
+            </form>
+          </div>
+          </div>
+          </div>
+          </div>
+          </section>
   </template>
   
   <script>
