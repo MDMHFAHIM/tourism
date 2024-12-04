@@ -83,7 +83,8 @@
         DataService.bookTransport(this.formData)
         .then(r => {
             if(r){
-                window.location.href='/Mail';
+                console.log(r);
+                //window.location.href='/Mail';
             }
         })
         .catch(e => {
